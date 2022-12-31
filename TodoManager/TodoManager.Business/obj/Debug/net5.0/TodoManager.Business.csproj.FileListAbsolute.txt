@@ -1,0 +1,12 @@
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.Business.deps.json
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.Business.dll
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.Business.pdb
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.csproj.AssemblyReference.cache
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.AssemblyInfoInputs.cache
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.AssemblyInfo.cs
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.csproj.CoreCompileInputs.cache
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.dll
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\refint\TodoManager.Business.dll
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.pdb
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\ref\TodoManager.Business.dll
