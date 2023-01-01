@@ -9,5 +9,8 @@ namespace TodoManager.DataAccess.Abstract
 {
     public interface ITodoDal : IRepository<Todo>
     {
+        public List<Todo> GetListOneWeekTodo();
+        public List<Todo> GetListOneMonthTodo();
+        public List<Todo> GetListOneDayTodo();
     }
 }

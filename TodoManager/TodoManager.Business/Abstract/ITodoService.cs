@@ -14,7 +14,7 @@ namespace TodoManager.Business.Abstract
         void Update(Todo todo);
         void Delete(int todoId);
         Todo GetById(int productId);
-        Todo OneDayTodo();
+        List<Todo> OneDayTodo();
         List<Todo> ThirtyDaysTodo();
         List<Todo> OneWeekTodo();
 

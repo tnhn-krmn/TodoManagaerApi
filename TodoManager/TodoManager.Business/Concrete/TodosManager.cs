@@ -9,11 +9,11 @@ using TodoManager.Entities.Concrete;
 
 namespace TodoManager.Business.Concrete
 {
-    public class TodoManager : ITodoService
+    public class TodosManager : ITodoService
     {
         ITodoDal _todoDal;
 
-        public TodoManager(ITodoDal todoDal)
+        public TodosManager(ITodoDal todoDal)
         {
             _todoDal = todoDal;
         }
@@ -38,19 +38,19 @@ namespace TodoManager.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public Todo OneDayTodo()
+        public List<Todo> OneDayTodo()
         {
-            throw new NotImplementedException();
+            return _todoDal.GetListOneDayTodo();
         }
 
         public List<Todo> OneWeekTodo()
         {
-            throw new NotImplementedException();
+            return _todoDal.GetListOneWeekTodo();
         }
 
         public List<Todo> ThirtyDaysTodo()
         {
-            throw new NotImplementedException();
+            return _todoDal.GetListOneMonthTodo();
         }
 
         public void Update(Todo todo)
