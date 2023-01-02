@@ -10,7 +10,7 @@ using TodoManager.DataAccess.Concrete;
 namespace TodoManager.DataAccess.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20221231230621_mig1")]
+    [Migration("20230101221212_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -62,6 +62,12 @@ namespace TodoManager.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Surname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");

@@ -13,7 +13,7 @@ namespace TodoManager.DataAccess.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-A5RCAJ3;Database=TodoManager;Trusted_Connection=True");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-A5RCAJ3;Database=TodoManagerApp;Trusted_Connection=True");
         }
 
         public DbSet<User> Users { get; set; }

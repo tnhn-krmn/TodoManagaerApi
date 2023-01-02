@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using TodoManager.Business.Abstract;
 using TodoManager.Entities.Concrete;
@@ -16,6 +18,7 @@ namespace TodoManager.API.Controllers
             _todoService = todoService;
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("OneWeekTodo")]
         public List<Todo> OneWeekTodo()
         {
