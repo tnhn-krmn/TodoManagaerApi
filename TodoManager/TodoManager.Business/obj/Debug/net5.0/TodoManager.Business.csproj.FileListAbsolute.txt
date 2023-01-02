@@ -15,3 +15,5 @@ C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\
 C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.DataAccess.pdb
 C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.Entities.pdb
 C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\obj\Debug\net5.0\TodoManager.Business.csproj.CopyComplete
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.Core.dll
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.Business\bin\Debug\net5.0\TodoManager.Core.pdb

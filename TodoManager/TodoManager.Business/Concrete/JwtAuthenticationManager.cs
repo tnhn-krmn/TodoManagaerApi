@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using TodoManager.Business.Abstract;
-using TodoManager.Business.Helper;
+using TodoManager.Core.Business.Helper;
 using TodoManager.DataAccess.Concrete;
 using TodoManager.Entities.Concrete;
 

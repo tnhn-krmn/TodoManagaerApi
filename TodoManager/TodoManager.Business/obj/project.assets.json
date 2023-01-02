@@ -3177,6 +3177,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TodoManager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        }
+      },
       "TodoManager.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -9473,6 +9483,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "TodoManager.Core/1.0.0": {
+      "type": "project",
+      "path": "../TodoManager.Core/TodoManager.Core.csproj",
+      "msbuildProject": "../TodoManager.Core/TodoManager.Core.csproj"
+    },
     "TodoManager.DataAccess/1.0.0": {
       "type": "project",
       "path": "../TodoManager.DataAccess/TodoManager.DataAccess.csproj",
@@ -9491,6 +9506,7 @@
       "Microsoft.AspNetCore.Authorization >= 6.0.0",
       "ServiceStack >= 6.5.0",
       "System.IdentityModel.Tokens.Jwt >= 6.25.1",
+      "TodoManager.Core >= 1.0.0",
       "TodoManager.DataAccess >= 1.0.0",
       "TodoManager.Entities >= 1.0.0"
     ]
@@ -9522,6 +9538,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.Core\\TodoManager.Core.csproj": {
+              "projectPath": "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.Core\\TodoManager.Core.csproj"
+            },
             "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.DataAccess\\TodoManager.DataAccess.csproj": {
               "projectPath": "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.DataAccess\\TodoManager.DataAccess.csproj"
             },

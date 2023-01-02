@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using TodoManager.API.Extension;
 using TodoManager.Business.Abstract;
 using TodoManager.Entities.Concrete;
 
 namespace TodoManager.API.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("api/[controller]")]
     public class TodoController : Controller
@@ -18,47 +20,28 @@ namespace TodoManager.API.Controllers
             _todoService = todoService;
         }
 
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpGet("OneWeekTodo")]
+        [HttpPost("OneWeekTodo")]
         public List<Todo> OneWeekTodo()
         {
            var todos =_todoService.OneWeekTodo();
-           if(todos.Count > 0)
-            {
-                return todos;
-            }
-           else
-            {
-                return null;
-            }
+            var todo = IsEmpty.IsTodo(todos);
+            return todo;
         }
 
-        [HttpGet("OneMonthTodo")]
+        [HttpPost("OneMonthTodo")]
         public List<Todo> OneMonthTodo()
         {
             var todos = _todoService.ThirtyDaysTodo();
-            if (todos.Count > 0)
-            {
-                return todos;
-            }
-            else
-            {
-                return null;
-            }
+            var todo = IsEmpty.IsTodo(todos);
+            return todo;
         }
 
-        [HttpGet("OneDayTodo")]
+        [HttpPost("OneDayTodo")]
         public List<Todo> OneDayTodo()
         {
             var todos = _todoService.OneDayTodo();
-            if (todos.Count > 0)
-            {
-                return todos;
-            }
-            else
-            {
-                return null;
-            }
+            var todo = IsEmpty.IsTodo(todos);
+            return todo;
         }
     }
 }

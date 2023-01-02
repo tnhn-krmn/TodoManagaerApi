@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TodoManager.Business.Helper
+namespace TodoManager.Core.Business.Helper
 {
     public class AppSettings
     {

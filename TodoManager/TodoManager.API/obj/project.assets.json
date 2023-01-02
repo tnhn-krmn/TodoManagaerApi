@@ -3275,6 +3275,7 @@
           "Microsoft.AspNetCore.Authorization": "6.0.0",
           "ServiceStack": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.25.1",
+          "TodoManager.Core": "1.0.0",
           "TodoManager.DataAccess": "1.0.0",
           "TodoManager.Entities": "1.0.0"
         },
@@ -3283,6 +3284,16 @@
         },
         "runtime": {
           "bin/placeholder/TodoManager.Business.dll": {}
+        }
+      },
+      "TodoManager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoManager.Core.dll": {}
         }
       },
       "TodoManager.DataAccess/1.0.0": {
@@ -9692,6 +9703,11 @@
       "type": "project",
       "path": "../TodoManager.Business/TodoManager.Business.csproj",
       "msbuildProject": "../TodoManager.Business/TodoManager.Business.csproj"
+    },
+    "TodoManager.Core/1.0.0": {
+      "type": "project",
+      "path": "../TodoManager.Core/TodoManager.Core.csproj",
+      "msbuildProject": "../TodoManager.Core/TodoManager.Core.csproj"
     },
     "TodoManager.DataAccess/1.0.0": {
       "type": "project",
