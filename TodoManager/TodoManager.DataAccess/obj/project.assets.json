@@ -1764,9 +1764,22 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TodoManager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        }
+      },
       "TodoManager.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TodoManager.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TodoManager.Entities.dll": {}
         },
@@ -6041,6 +6054,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "TodoManager.Core/1.0.0": {
+      "type": "project",
+      "path": "../TodoManager.Core/TodoManager.Core.csproj",
+      "msbuildProject": "../TodoManager.Core/TodoManager.Core.csproj"
     },
     "TodoManager.Entities/1.0.0": {
       "type": "project",

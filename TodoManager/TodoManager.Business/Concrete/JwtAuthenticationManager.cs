@@ -30,7 +30,7 @@ namespace TodoManager.Business.Concrete
 
         public User Authenticate(string username, string password)
         {
-            var IsUser = context.Users.SingleOrDefault(x => x.UserName == username && x.Password == password);
+            var IsUser = context.Users.SingleOrDefault(x => x.Username == username && x.Password == password);
             if (IsUser == null)
                 return null;
             

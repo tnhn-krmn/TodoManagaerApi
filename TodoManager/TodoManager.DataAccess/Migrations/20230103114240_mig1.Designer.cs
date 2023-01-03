@@ -10,7 +10,7 @@ using TodoManager.DataAccess.Concrete;
 namespace TodoManager.DataAccess.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230101221212_mig1")]
+    [Migration("20230103114240_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,8 @@ namespace TodoManager.DataAccess.Migrations
 
                     b.HasKey("TodoId");
 
+                    b.HasIndex("UserID");
+
                     b.ToTable("Todos");
                 });
 
@@ -67,12 +69,28 @@ namespace TodoManager.DataAccess.Migrations
                     b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("TodoManager.Entities.Concrete.Todo", b =>
+                {
+                    b.HasOne("TodoManager.Entities.Concrete.User", "User")
+                        .WithMany("todo")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TodoManager.Entities.Concrete.User", b =>
+                {
+                    b.Navigation("todo");
                 });
 #pragma warning restore 612, 618
         }

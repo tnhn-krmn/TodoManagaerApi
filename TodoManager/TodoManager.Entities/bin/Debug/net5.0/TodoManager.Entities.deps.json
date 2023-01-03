@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "TodoManager.Entities/1.0.0": {
+        "dependencies": {
+          "TodoManager.Core": "1.0.0"
+        },
         "runtime": {
           "TodoManager.Entities.dll": {}
+        }
+      },
+      "TodoManager.Core/1.0.0": {
+        "runtime": {
+          "TodoManager.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "TodoManager.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TodoManager.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

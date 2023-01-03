@@ -40,6 +40,8 @@ namespace TodoManager.DataAccess.Migrations
 
                     b.HasKey("TodoId");
 
+                    b.HasIndex("UserID");
+
                     b.ToTable("Todos");
                 });
 
@@ -65,12 +67,28 @@ namespace TodoManager.DataAccess.Migrations
                     b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("TodoManager.Entities.Concrete.Todo", b =>
+                {
+                    b.HasOne("TodoManager.Entities.Concrete.User", "User")
+                        .WithMany("todo")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TodoManager.Entities.Concrete.User", b =>
+                {
+                    b.Navigation("todo");
                 });
 #pragma warning restore 612, 618
         }

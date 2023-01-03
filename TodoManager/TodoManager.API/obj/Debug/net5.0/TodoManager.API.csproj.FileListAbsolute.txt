@@ -96,3 +96,4 @@ C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.API\bin\D
 C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.API\bin\Debug\net5.0\zh-Hant\System.Private.ServiceModel.resources.dll
 C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.API\bin\Debug\net5.0\TodoManager.Core.dll
 C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.API\bin\Debug\net5.0\TodoManager.Core.pdb
+C:\Users\tunah\OneDrive\Masaüstü\TodoManager\TodoManager\TodoManager.API\bin\Debug\net5.0\libman.json

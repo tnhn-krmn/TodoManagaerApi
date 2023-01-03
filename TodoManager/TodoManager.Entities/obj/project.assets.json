@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "TodoManager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoManager.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TodoManager.Core/1.0.0": {
+      "type": "project",
+      "path": "../TodoManager.Core/TodoManager.Core.csproj",
+      "msbuildProject": "../TodoManager.Core/TodoManager.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "TodoManager.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\tunah\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.Core\\TodoManager.Core.csproj": {
+              "projectPath": "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.Core\\TodoManager.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

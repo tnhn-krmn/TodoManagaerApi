@@ -14,33 +14,31 @@ namespace TodoManager.DataAccess.Concrete
     {
         public List<Todo> GetListOneWeekTodo()
         {
-            using (var context = new Context())
-            {
-                DateTime weekEndDate = DateTime.Now.Date.AddDays(7);
-                var todo = context.Todos.
-                    Where(x => x.Date >= DateTime.Now.Date && x.Date < weekEndDate.Date).ToList();
+
+                DateTime date = DateTime.Now.Date.AddDays(7);
+                var todo = GetDateMatch(date);
                 return todo;
-            }
         }
 
         public List<Todo> GetListOneMonthTodo()
         {
-            using (var context = new Context())
-            {
-                DateTime weekEndDate = DateTime.Now.Date.AddDays(30);
-                var todo = context.Todos.
-                    Where(x => x.Date >= DateTime.Now.Date && x.Date < weekEndDate.Date).ToList();
+                DateTime date = DateTime.Now.Date.AddDays(30);
+                var todo = GetDateMatch(date);
                 return todo;
-            }
         }
 
         public List<Todo> GetListOneDayTodo()
         {
+                DateTime date = DateTime.Now.Date.AddHours(24);
+                var todo = GetDateMatch(date);
+                return todo;
+        }
+
+        private List<Todo> GetDateMatch(DateTime date)
+        {
             using (var context = new Context())
             {
-                DateTime weekEndDate = DateTime.Now.Date.AddHours(24);
-                var todo = context.Todos.
-                    Where(x => x.Date >= DateTime.Now.Date && x.Date < weekEndDate.Date).ToList();
+                var todo = context.Todos.Where(x => x.Date >= DateTime.Now.Date && x.Date < date.Date).ToList();
                 return todo;
             }
         }

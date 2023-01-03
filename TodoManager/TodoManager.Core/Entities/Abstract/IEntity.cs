@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TodoManager.Entities.Abstract
+namespace TodoManager.Core.Entities.Abstract
 {
     public interface IEntity
     {

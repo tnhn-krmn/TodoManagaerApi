@@ -312,7 +312,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.Core\\TodoManager.Core.csproj": {
+                "projectPath": "C:\\Users\\tunah\\OneDrive\\Masaüstü\\TodoManager\\TodoManager\\TodoManager.Core\\TodoManager.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

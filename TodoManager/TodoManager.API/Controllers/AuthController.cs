@@ -19,11 +19,11 @@ namespace TodoManager.API.Controllers
 
         [AllowAnonymous]
         [HttpPost("Authenticate")]
-        public IActionResult Authenticate([FromBody] User user)
+        public IActionResult Authenticate(string username, string password)
         {
             // throw new Exception("No entered!");
 
-            var IsUser = _jwtAuthenticationService.Authenticate(user.UserName,user.Password);
+            var IsUser = _jwtAuthenticationService.Authenticate(username, password);
 
             if (IsUser == null)
             {

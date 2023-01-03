@@ -2129,6 +2129,9 @@
         }
       },
       "TodoManager.Entities/1.0.0": {
+        "dependencies": {
+          "TodoManager.Core": "1.0.0"
+        },
         "runtime": {
           "TodoManager.Entities.dll": {}
         },

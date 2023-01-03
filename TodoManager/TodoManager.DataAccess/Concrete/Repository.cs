@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TodoManager.Core.Entities.Abstract;
 using TodoManager.DataAccess.Abstract;
-using TodoManager.Entities.Abstract;
 
 namespace TodoManager.DataAccess.Concrete
 {
